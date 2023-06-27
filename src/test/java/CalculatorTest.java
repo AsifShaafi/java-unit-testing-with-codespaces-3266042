@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class CalculatorTest {
   Calculator calculator = new Calculator();
 
@@ -8,8 +10,7 @@ public class CalculatorTest {
     int expected = 3;
 
     int actual = calculator.sum(1, 2);
-
-    assertEquals(expected, actual);
     
+    assertEquals(expected, actual);
   }
 }
