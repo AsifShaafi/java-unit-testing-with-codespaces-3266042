@@ -18,6 +18,16 @@ public class DateChecker {
     }
 
     public boolean has31Days(Month month) {
+        switch (month) {
+            case JANUARY, MARCH, MAY, JULY, AUGUST, OCTOBER, DECEMBER -> {
+                return true;
+            }
+            case FEBRUARY, APRIL, JUNE, SEPTEMBER, NOVEMBER -> {
+                return false;
+            }
+            default -> {
+            }
+        }
         return false;
     }
 
